@@ -33,8 +33,25 @@ img {
 .tape-images {
   height: 100%;
   display: flex;
+  transition: transform 0.3s ease;
 }
 
 p {
   height: 10%;
+}
+
+#slider2:checked ~ .window .tape-images {
+  transform: translateX(-80vw);
+}
+
+#slider3:checked ~ .window .tape-images {
+  transform: translateX(-160vw);
+}
+
+#slider4:checked ~ .window .tape-images {
+  transform: translateX(-240vw);
+}
+
+#slider5:checked ~ .window .tape-images {
+  transform: translateX(-320vw);
 }
