@@ -44,6 +44,7 @@ img {
   height: 90%;
   width: 100%;
   object-fit: cover;
+  border-radius: 14px;
 }
 
 .slide {
@@ -59,7 +60,6 @@ img {
   overflow: hidden;
   width: 80vw;
   height: 80vh;
-  border: 2px solid black;
 }
 
 .tape-images {
@@ -69,6 +69,8 @@ img {
 }
 
 p {
+  margin: 0.5em;
+  font-size: 2em;
   height: 10%;
 }
 
