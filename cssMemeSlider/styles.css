@@ -7,6 +7,39 @@ body {
   background-color: bisque;
 }
 
+input {
+  display: none;
+}
+
+.grand-flex {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.buttons-general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  padding: 0.8rem;
+  margin: 0.8rem;
+  cursor: pointer;
+}
+
+.target {
+  padding: 0.6rem;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.target:active {
+  transform: scale(0.95);
+  background-color: black;
+}
+
 img {
   height: 90%;
   width: 100%;
@@ -26,7 +59,6 @@ img {
   overflow: hidden;
   width: 80vw;
   height: 80vh;
-  /* aspect-ratio: 16 / 9; */
   border: 2px solid black;
 }
 
@@ -40,18 +72,43 @@ p {
   height: 10%;
 }
 
-#slider2:checked ~ .window .tape-images {
+#slider2:checked ~ .grand-flex .window .tape-images {
   transform: translateX(-80vw);
 }
-
-#slider3:checked ~ .window .tape-images {
+#slider3:checked ~ .grand-flex .window .tape-images {
   transform: translateX(-160vw);
 }
-
-#slider4:checked ~ .window .tape-images {
+#slider4:checked ~ .grand-flex .window .tape-images {
   transform: translateX(-240vw);
 }
-
-#slider5:checked ~ .window .tape-images {
+#slider5:checked ~ .grand-flex .window .tape-images {
   transform: translateX(-320vw);
+}
+
+.target {
+  transition: background-color 0.3s ease;
+}
+
+.target:hover {
+  background-color: rgb(35, 32, 32);
+}
+
+#slider1:checked ~ .grand-flex .buttons-general .buttons .s1 {
+  background-color: rgb(35, 32, 32);
+}
+
+#slider2:checked ~ .grand-flex .buttons-general .buttons .s2 {
+  background-color: rgb(35, 32, 32);
+}
+
+#slider3:checked ~ .grand-flex .buttons-general .buttons .s3 {
+  background-color: rgb(35, 32, 32);
+}
+
+#slider4:checked ~ .grand-flex .buttons-general .buttons .s4 {
+  background-color: rgb(35, 32, 32);
+}
+
+#slider5:checked ~ .grand-flex .buttons-general .buttons .s5 {
+  background-color: rgb(35, 32, 32);
 }
